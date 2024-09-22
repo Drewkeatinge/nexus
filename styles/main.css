@@ -1,0 +1,151 @@
+html {
+  background-color: #464646;
+}
+
+/* ╔════════════════════════╗ */
+/* ║        Home Page       ║ */
+/* ╚════════════════════════╝ */
+
+
+.main-page {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 450px;
+  margin-top: 100px;
+}
+
+.nexus-header {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 2px 2px red;
+  font-size: 83px;
+  letter-spacing: 5px;
+} 
+
+input[type="file"] {
+  position: relative;
+}
+
+input[type="file"]::file-selector-button {
+  width: 136px;
+  color: transparent;
+}
+
+/* Faked label styles and icon */
+input[type="file"]::before {
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  left: 16px;
+  height: 20px;
+  width: 20px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+}
+
+input[type="file"]::after {
+  position: absolute;
+  pointer-events: none;
+  top: 11px;
+  left: 40px;
+  color: #0964b0;
+  content: "Upload File";
+}
+
+/* ------- From Step 1 ------- */
+
+/* file upload button */
+input[type="file"]::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
+}
+
+.barcode-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Add space between label, input, and button */
+  margin-top: 40px;
+  box-sizing: border-box;
+  width: 350px;
+}
+
+.barcode-form label {
+  font-weight: bold; /* Optional: to emphasize the label */
+  display: block;
+}
+
+.barcode-form input {
+  padding: 8px;
+  font-size: 16px;
+  width: 330px; /* Adjust width if necessary */
+  margin-top: 20px
+}
+
+.barcode-header {
+  margin-top: 60px;
+}
+
+.button {
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  font-size: 16px; /* Font size */
+  color: white; /* Text color */
+  background-color: #007BFF; /* Button color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+  width: 350px
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.button:active {
+  background-color: #004494; /* Even darker color when clicked */
+  transform: translateY(0); /* Reset the lift effect */
+}
+
+
+/* ╔═══════════════════════════╗ */
+/* ║        Product Page       ║ */
+/* ╚═══════════════════════════╝ */
+
+.product-page {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-heading {
+  align-self: center;
+}
+
+li {
+  padding: 10px;
+  font-size: larger;
+}
+

@@ -28,8 +28,16 @@
     ]
   },
   "dependencies": {
+    "@importok/javascript": "^1.0.0",
+    "@importok/react": "^1.0.0",
     "cors": "^2.8.5",
+    "csv-import-react": "^1.0.13",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
     "express": "^4.17.2",
+    "json2csv": "^6.0.0-alpha.2",
+    "multer": "^1.4.5-lts.1",
+    "react-router-dom": "^6.26.2",
     "superagent": "^8.1.2"
   },
   "devDependencies": {
@@ -40,7 +48,10 @@
     "@testing-library/react": "^14.0.0",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.14",
+    "@types/json2csv": "^5.0.7",
+    "@types/multer": "^1.4.12",
     "@types/node": "^18.11.9",
+    "@types/papaparse": "^5.3.14",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/superagent": "^8.1.1",
