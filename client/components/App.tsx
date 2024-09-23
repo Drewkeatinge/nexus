@@ -98,13 +98,13 @@ const CsvUploader = () => {
             metadesc:
               product?.modelNo +
                 ' - ' +
-                product?.brand +
+                product?.brand.name +
                 ' ' +
                 product?.heading || '',
             metakeywords:
               product?.modelNo +
                 ' - ' +
-                product?.brand +
+                product?.brand.name +
                 ' ' +
                 product?.heading || '',
           }
@@ -147,7 +147,7 @@ const CsvUploader = () => {
         <p>Error loading product data.</p>
       )}
       {isReadyToDownload && (
-        <button onClick={() => downloadCsv(data)}>
+        <button onClick={() => downloadCsv(data)} className='download button'>
           Download Completed CSV
         </button>
       )}

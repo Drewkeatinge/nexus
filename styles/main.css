@@ -130,6 +130,11 @@ input[type="file"]::file-selector-button:active {
 }
 
 
+.download {
+  margin-top: 40px;
+}
+
+
 /* ╔═══════════════════════════╗ */
 /* ║        Product Page       ║ */
 /* ╚═══════════════════════════╝ */
